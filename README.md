@@ -83,9 +83,9 @@ Pembagian IP dilakukan dengan cara mengelompokkan subnet-subnet kecil menjadi su
 * Subnet F dan G
 ![image](https://user-images.githubusercontent.com/75016595/143725714-27a14207-363d-4bae-91dd-80b3c7479bbc.png)  
 
-Pada pengelompokkan subnet di atas, didapatkan subnet root /19. Pengelompokkan di atas tidak termasuk server, sehingga perlu ditambahkan pada pembagian IP, sehingga tree-nya akan seperti ini.
-![image](https://user-images.githubusercontent.com/75016595/143725734-f25ad8a7-11b5-473f-9f12-6faabff0c5b3.png)
+Pada pengelompokkan subnet di atas, didapatkan subnet root /16. Pengelompokkan di atas tidak termasuk server, sehingga perlu ditambahkan pada pembagian IP, sehingga tree-nya akan seperti ini.  
 
+![image](https://user-images.githubusercontent.com/75016595/143725734-f25ad8a7-11b5-473f-9f12-6faabff0c5b3.png)
 
 ### Routing
 * **Foosha**
