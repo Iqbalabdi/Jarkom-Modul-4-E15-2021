@@ -3,126 +3,65 @@ M. Iqbal Abdi (05111940000151)
 
 ## VLSM
 ### Topologi
+![image](https://user-images.githubusercontent.com/75016595/143725109-337e9be0-6bf4-4075-a5de-2fdc588f85fb.png)
+
 
 Pada CPT akan digunakan metode VLSM dalam penerapan pembagian IP
 
 ### Pembagian IP
+![image](https://user-images.githubusercontent.com/75016595/143725110-fa18ffc7-2c30-4516-8ec5-eec9a70621c0.png)
 
-Pembagian IP dilakukan dengan tree diatas, sehingga menghasilkan IP sebagai berikut.
-```txt
-A1
-Network ID : 10.29.27.0
-Netmask    : 255.255.255.128
-Broadcast  : 10.29.27.127
-A2
-Network ID : 10.29.0.0
-Netmask    : 255.255.248.0
-Broadcast  : 10.29.7.255
-A3
-Network ID : 10.29.27.144
-Netmask    : 255.255.255.252
-Broadcast  : 10.29.27.147
-A4
-Network ID : 10.29.16.0
-Netmask    : 255.255.252.0
-Broadcast  : 10.29.19.255
-A5
-Network ID : 10.29.27.148
-Netmask    : 255.255.255.252
-Broadcast  : 10.29.27.151
-A6
-Network ID : 10.29.8.0
-Netmask    : 255.255.252.0
-Broadcast  : 10.29.11.255
-A7
-Network ID : 10.29.27.152
-Netmask    : 255.255.255.252
-Broadcast  : 10.29.27.155
-A8
-Network ID : 10.29.27.156
-Netmask    : 255.255.255.252
-Broadcast  : 10.29.27.159
-A9
-Network ID : 10.29.20.0
-Netmask    : 255.255.252.0
-Broadcast  : 10.29.23.255
-A10
-Network ID : 10.29.27.160
-Netmask    : 255.255.255.252
-Broadcast  : 10.29.27.163
-A11
-Network ID : 10.29.26.0
-Netmask    : 255.255.255.0
-Broadcast  : 10.29.26.255
-A12
-Network ID : 10.29.12.0
-Netmask    : 255.255.252.0
-Broadcast  : 10.29.15.255
-A13
-Network ID : 10.29.27.164
-Netmask    : 255.255.255.252
-Broadcast  : 10.29.27.167
-A14
-Network ID : 10.29.24.0
-Netmask    : 255.255.254.0
-Broadcast  : 10.29.25.255
-A15
-Network ID : 10.29.27.128
-Netmask    : 255.255.255.240
-Broadcast  : 10.29.27.143
-```
-
-### Routing
+### Konfigurasi Routing
 * **Foosha**
 ```txt
-Network 10.29.16.0 Netmask 255.255.252.0 Next Hop 10.29.27.150
-Network 10.29.27.0 Netmask 255.255.255.128 Next Hop 10.29.27.150
-Network 10.29.27.144 Netmask 255.255.255.252 Next Hop 10.29.27.150
-Network 10.29.0.0 Netmask 255.255.248.0 Next Hop 10.29.27.150
-Network 10.29.20.0 Netmask 255.255.252.0 Next Hop 10.29.27.158
-Network 10.29.24.0 Netmask 255.255.254.0 Next Hop 10.29.27.158
-Network 10.29.27.128 Netmask 255.255.255.240 Next Hop 10.29.27.158
-Network 10.29.27.160 Netmask 255.255.255.252 Next Hop 10.29.27.158
-Network 10.29.27.164 Netmask 255.255.255.252 Next Hop 10.29.27.158
-Network 10.29.26.0 Netmask 255.255.255.0 Next Hop 10.29.27.158
-Network 10.29.12.0 Netmask 255.255.252.0 Next Hop 10.29.27.158
+Network 192.207.12.0 Netmask 255.255.252.0 Next Hop 192.207.27.149
+Network 192.207.27.0 Netmask 255.255.255.128 Next Hop 192.207.27.149
+Network 192.207.0.0 Netmask 255.255.248.0 Next Hop 192.207.27.149
+Network 192.207.12.144 Netmask 255.255.255.252 Next Hop 192.207.27.149
+Network 192.207.16.0 Netmask 255.255.252.0 Next Hop 192.207.27.154
+Network 192.207.27.156 Netmask 255.255.255.252 Next Hop 192.207.27.154
+Network 192.207.20.0 Netmask 255.255.252.0 Next Hop 192.207.27.154
+Network 192.207.26.0 Netmask 255.255.255.0 Next Hop 192.207.27.154
+Network 192.207.27.128 Netmask 255.255.255.240 Next Hop 192.207.27.154
+Network 192.207.24.0 Netmask 255.255.254.0 Next Hop 192.207.27.154
+Network 192.207.27.164 Netmask 255.255.255.252 Next Hop 192.207.27.154
 ```
 
 * **Water7**
 ```txt
-Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 10.29.27.149
-Network 10.29.27.0 Netmask 255.255.255.128 Next Hop 10.29.27.146
-Network 10.29.0.0 Netmask 255.255.248.0 Next Hop 10.29.27.146
+Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 192.207.27.150
+Network 192.207.27.0 Netmask 255.255.255.128 Next Hop 192.207.27.146
+Network 192.207.0.0 Netmask 255.255.248.0 Next Hop 192.207.27.146
 ```
 
 * **Pucci**
 ```txt
-Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 10.29.27.145
+Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 192.207.27.145
 ```
 
 * **Guanhao**
 ```txt
-Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 10.29.27.157
-Network 10.29.27.128 Netmask 255.255.255.240 Next Hop 10.29.24.2
-Network 10.29.27.164 Netmask 255.255.255.252 Next Hop 10.29.27.162
-Network 10.29.26.0 Netmask 255.255.255.0 Next Hop 10.29.27.162
-Network 10.29.12.0 Netmask 255.255.252.0 Next Hop 10.29.27.162
+Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 192.207.27.153
+Network 192.207.27.128 Netmask 255.255.255.240 Next Hop 192.207.24.2
+Network 192.207.26.0 Netmask 255.255.255.0 Next Hop 192.207.27.158
+Network 192.207.20.0 Netmask 255.255.252.0 Next Hop 192.207.27.158
+Network 192.207.27.164 Netmask 255.255.255.252 Next Hop 192.207.27.158
 ```
 
 * **Alabasta**
 ```txt
-Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 10.29.24.1
+Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 192.207.24.1
 ```
 
 * **Oimo**
 ```txt
-Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 10.29.27.161
-Network 10.29.12.0 Netmask 255.255.252.0 Next Hop 10.29.26.2
+Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 192.207.27.157
+Network 192.207.20.0 Netmask 255.255.252.0 Next Hop 192.207.26.2
 ```
 
 * **Seastone**
 ```txt
-Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 10.29.26.1
+Network 0.0.0.0 Netmask 0.0.0.0 Next Hop 192.207.26.1
 ```
 
 ## CIDR
