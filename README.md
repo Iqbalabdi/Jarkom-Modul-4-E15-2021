@@ -9,7 +9,7 @@ M. Iqbal Abdi (05111940000151)
 Pada CPT akan digunakan metode VLSM dalam penerapan pembagian IP
 
 ### Pembagian IP
-![image](https://user-images.githubusercontent.com/75016595/143725110-fa18ffc7-2c30-4516-8ec5-eec9a70621c0.png)
+![image](https://user-images.githubusercontent.com/75016595/143725820-e062a5ae-bf98-4ef5-a7ff-2eb58fe763d3.png)
 
 ### Konfigurasi Routing
 * **Foosha**
