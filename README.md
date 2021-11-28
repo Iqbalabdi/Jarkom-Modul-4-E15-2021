@@ -3,12 +3,10 @@ M. Iqbal Abdi (05111940000151)
 
 ## VLSM
 ### Topologi
-![image](https://user-images.githubusercontent.com/75016595/143725050-77978f72-bb3b-42ec-b3cb-61cb0ee4a9f9.png)
 
 Pada CPT akan digunakan metode VLSM dalam penerapan pembagian IP
 
 ### Pembagian IP
-![vlsm-tree](images/vlsm-vlsm.drawio.png)
 
 Pembagian IP dilakukan dengan tree diatas, sehingga menghasilkan IP sebagai berikut.
 ```txt
